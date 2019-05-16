@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		6BA32C71228D831200D03662 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA32C70228D831200D03662 /* AppDelegate.swift */; };
-		6BA32C73228D831200D03662 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA32C72228D831200D03662 /* ViewController.swift */; };
+		6BA32C73228D831200D03662 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA32C72228D831200D03662 /* MainVC.swift */; };
 		6BA32C76228D831200D03662 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BA32C74228D831200D03662 /* Main.storyboard */; };
 		6BA32C78228D831300D03662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BA32C77228D831300D03662 /* Assets.xcassets */; };
 		6BA32C7B228D831300D03662 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BA32C79228D831300D03662 /* LaunchScreen.storyboard */; };
+		6BA32C85228D8C0000D03662 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA32C84228D8C0000D03662 /* CurrencyTextField.swift */; };
+		6BA32C88228D968A00D03662 /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA32C87228D968A00D03662 /* Wage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6BA32C6D228D831200D03662 /* SwiftAutolyout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAutolyout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BA32C70228D831200D03662 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6BA32C72228D831200D03662 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6BA32C72228D831200D03662 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		6BA32C75228D831200D03662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6BA32C77228D831300D03662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BA32C7A228D831300D03662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6BA32C7C228D831300D03662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BA32C84228D8C0000D03662 /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
+		6BA32C87228D968A00D03662 /* Wage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,40 @@
 		6BA32C6F228D831200D03662 /* SwiftAutolyout */ = {
 			isa = PBXGroup;
 			children = (
+				6BA32C86228D967700D03662 /* Model */,
+				6BA32C83228D8BCE00D03662 /* Views */,
+				6BA32C82228D8AE300D03662 /* Controller */,
 				6BA32C70228D831200D03662 /* AppDelegate.swift */,
-				6BA32C72228D831200D03662 /* ViewController.swift */,
 				6BA32C74228D831200D03662 /* Main.storyboard */,
 				6BA32C77228D831300D03662 /* Assets.xcassets */,
 				6BA32C79228D831300D03662 /* LaunchScreen.storyboard */,
 				6BA32C7C228D831300D03662 /* Info.plist */,
 			);
 			path = SwiftAutolyout;
+			sourceTree = "<group>";
+		};
+		6BA32C82228D8AE300D03662 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6BA32C72228D831200D03662 /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6BA32C83228D8BCE00D03662 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6BA32C84228D8C0000D03662 /* CurrencyTextField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6BA32C86228D967700D03662 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6BA32C87228D968A00D03662 /* Wage.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +165,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BA32C73228D831200D03662 /* ViewController.swift in Sources */,
+				6BA32C85228D8C0000D03662 /* CurrencyTextField.swift in Sources */,
+				6BA32C88228D968A00D03662 /* Wage.swift in Sources */,
+				6BA32C73228D831200D03662 /* MainVC.swift in Sources */,
 				6BA32C71228D831200D03662 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
